@@ -11,7 +11,7 @@ client = Client(ACCOUNT_SID, AUTH_TOKEN)
 for i in range(10):
     try:
         client.messages.create(
-            to=alex,
+            to=brother_phone_number,
             body="Ciao!, Hows it goin?",  # Message body, if any
             from_=twilio_phone_numer,
         )
